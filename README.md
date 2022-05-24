@@ -1,5 +1,9 @@
 # React Happy Flow
 Make your React code more readable. Say hello to flows with components
+## Install
+```bash
+npm i react-happy-flow
+```
 ## Doc
 ### - If
 Before:
