@@ -5,7 +5,7 @@
   "author": "Ushieru Kokoran (https://ushieru.com/)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nextui-org/nextui"
+    "url": "https://github.com/ushieru/react-happy-flow"
   },
   "license": "MIT",
   "scripts": {
