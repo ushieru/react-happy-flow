@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "declaration": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "target": "es6",
+    "module": "esnext",
+    "typeRoots": [
+      "../../node_modules/@types",
+      "./typings"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "storybook-static",
+    "dist",
+    "lib"
+  ],
+}
