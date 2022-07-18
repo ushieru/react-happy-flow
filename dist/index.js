@@ -4,7 +4,7 @@ function If({ condition, children }) {
   const childrenArray = Children.toArray(children);
   if (condition)
     return /* @__PURE__ */ React.createElement(React.Fragment, null, childrenArray.filter((child) => child.type.name !== "Else"));
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, childrenArray.filter((child) => child.type.name === "Else")[0]);
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, childrenArray.find((child) => child.type.name === "Else"));
 }
 
 // components/Else.tsx
@@ -14,14 +14,10 @@ function Else({ children }) {
 }
 
 // components/Switch.tsx
-import { Children as Children2 } from "react";
+import React3, { Children as Children2 } from "react";
 function Switch({ condition, children }) {
-  const child = Children2.toArray(children).filter((child2) => child2.type.name === "Case" && child2.props.condition === condition)[0];
-  if (child)
-    return child;
-  const default_ = Children2.toArray(children).filter((child2) => child2.type.name === "Default")[0];
-  if (default_)
-    return default_;
+  var _a;
+  return /* @__PURE__ */ React3.createElement(React3.Fragment, null, (_a = Children2.toArray(children).find((child) => child.type.name === "Case" && child.props.condition === condition)) != null ? _a : Children2.toArray(children).find((child) => child.type.name === "Default"), "    ");
 }
 
 // components/Case.tsx
